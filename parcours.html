@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-------------------------------------------- Navigation menu ---------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      function index() {
+        window.history.pushState("new", "title", "index.html");
+      }
+      function compétences() {
+        window.history.pushState("new", "title", "compétence.html");
+      }
+      function parcours() {
+        window.history.pushState("new", "title", "parcours.html");
+      }
+      function projets() {
+        window.history.pushState("new", "title", "projet.html");
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">AbdO</label>
+        <ul>
+          <li><a  href="" onclick="index()">accueil</a></li>
+          <li><a href="" onclick="compétences()">Compétences </a></li>
+          <li><a class="active" href="" onclick="parcours()">Parcours scolaire</a></li>
+          <li><a href="" onclick="projets()">Mon projets </a></li>
+        </ul>
+      </nav>
+    </div>
+            <!-------------------------------------------- text ----------------------------------------------->
+
+    <div class="divs">
+      <rect class="rect1"></rect>
+      <rect class="rect2"></rect>
+      <rect class="rect3"></rect>
+      <p class="pone">baccalaureat</p> 
+      <p class="ptwo">FSJES Tanger</p>
+      <p class="pthree">Solicode</p>
+      <p class="pone-1">2020 <br> 2021</p>
+      <p class="ptwo-1">2021 <br> 2022</p>
+      <p class="pthree-1">2021 <br> 2022</p>
+      <img class="svg"src="/images/svg.png" alt="">
+      <img class="svg2"src="/images/svg.png" alt="">
+    </div>
+  </body>
+</html>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-------------------------------------------- Navigation menu ---------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+      function index() {
+        window.history.pushState("new", "title", "index.html");
+      }
+      function compétences() {
+        window.history.pushState("new", "title", "compétence.html");
+      }
+      function parcours() {
+        window.history.pushState("new", "title", "parcours.html");
+      }
+      function projets() {
+        window.history.pushState("new", "title", "projet.html");}
+        function contact(){
+  window.history.pushState('new' , 'title' , 'contact.html')}
+     
+    </script>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">AbdO</label>
+        <ul>
+          <li><a  href="" onclick="index()">accueil</a></li>
+          <li><a href="" onclick="compétences()">Compétences </a></li>
+          <li><a href="" onclick="parcours()">Parcours scolaire</a></li>
+          <li><a class="active" href="" onclick="projets()">Mon projets </a></li>
+          <li><a href="" onclick="contact()">Contact moi </a></li>
+
+        </ul>
+      </nav>
+    </div>
+            <!-------------------------------------------- contenu ----------------------------------------------->
+
+    <div>
+      <rect class="projet1"><a href="https://drive.google.com/drive/folders/1oGdIz4WwdstY9eo2GwVcFiFttWJE0F91" _blank><img class="projetvocal" src="/images/vocal.jpg" alt=""></a></rect>
+      <rect class="projet2"><a href="https://drive.google.com/drive/folders/1mWHZHNFaUb601_muEr0gdyibVgoVLsjr?usp=sharing" _blank"><img class="projetscartch" src="/images/scartch.jpg" alt=""></a> </rect>
+      <rect class="projet3"><a href="https://solicode.co/Content/SoliCode/images/activities/logos/163.png" _blank><img class="projetlogo"src="/images/163.png" alt=""></a></rect>
+    </div>
+  </body>
+</html>
+</body>
+</html>

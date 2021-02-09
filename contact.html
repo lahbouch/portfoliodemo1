@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-------------------------------------------- Navigation menu ---------------------------------------------------->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>
+      function index(){
+      window.history.pushState('new' , 'title' , 'index.html')}
+      function compétences(){
+        window.history.pushState('new' , 'title' , 'compétence.html')}
+function parcours(){
+  window.history.pushState('new' , 'title' , 'parcours.html')}
+  function projets(){
+    window.history.pushState('new' , 'title' , 'projet.html')}
+
+function contact(){
+  window.history.pushState('new' , 'title' , 'contact.html')}
+</script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div >
+      <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"> <a href="index.html"> AbdO</a></label>
+      <ul>
+          <li><a  href="" onclick="index()">accueil</a></li>
+          <li><a href="" onclick="compétences()">Compétences </a></li>
+          <li><a href="" onclick="parcours()">Parcours scolaire</a></li>
+          <li><a href="" onclick="projets()">Mon projets </a></li>   
+          <li><a  class="active" href="" onclick="contact()">Contact moi </a></li>
+
+                 
+      </ul>
+    </nav>
+            <!-------------------------------------------- form ----------------------------------------------->
+
+    <title>SOLICODE form</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <section class="form">
+        <div class="container">
+          <form action="https://formspree.io/f/xeqpdwqd" method="POST" id="my-form">
+      
+            <div class="form-group">
+              <label for="firstName"> Prénom</label>
+              <input type="text" id="firstName" name="firstName">
+            </div>
+      
+            <div class="form-group">
+              <label for="latsName">Nom</label>
+              <input type="text" id="lastName" name="lastName">
+            </div>
+      
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email">
+            </div>
+      
+            <div class="form-group">
+              <label for="massage">Message</label>
+              <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+            </div>
+      
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+</div>
+</body>
+</html>
